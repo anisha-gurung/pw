@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("portfolio-theme") === "light") {
+            document.documentElement.setAttribute("data-theme", "light");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anisha Gurung — Portfolio</title>
+    <meta
+      name="description"
+      content="Tech student portfolio — Java, Python, web development, and SQL."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="#about">Anisha</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button
+          type="button"
+          class="theme-toggle"
+          aria-label="Switch to light mode"
+          aria-pressed="false"
+          title="Theme"
+        >
+          <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true"
+            >☀</span
+          >
+          <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true"
+            >☽</span
+          >
+        </button>
+        <a
+          class="btn btn-resume"
+          href="../assets/resume.pdf"
+          download="Anisha-Gurung-Resume.pdf"
+        >
+          Resume
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="about" class="section-block section-about">
+        <div class="page reveal">
+          <div class="about-grid">
+            <div class="about-copy">
+              <h1 class="about-heading">About Me</h1>
+              <p class="about-email">
+                <a href="mailto:anishagrg271@gmail.com">anishagrg271@gmail.com</a>
+              </p>
+              <p class="about-lead">
+                I’m <strong class="text-accent">Anisha Gurung</strong>, a tech
+                student learning Java, Python, HTML, CSS, and SQL. I enjoy
+                building practical projects and getting hands-on with software
+                and web development.
+              </p>
+              <p class="about-text">
+                I work with <span class="text-accent">Figma</span> for UI layout
+                and <span class="text-accent">Visual Studio Code</span> as my
+                main editor — always practising and improving.
+              </p>
+              <p class="about-text">
+                I’m open to opportunities where I can learn, contribute, and
+                grow. Grab my resume or jump to projects below.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#contact">Get in touch</a>
+                <a
+                  class="btn btn-ghost"
+                  href="../assets/resume.pdf"
+                  download="Anisha-Gurung-Resume.pdf"
+                >
+                  Download resume
+                </a>
+              </div>
+            </div>
+            <div class="about-visual" aria-hidden="true">
+              <div class="pixel-frame">
+                <div class="pixel-art">
+                  <svg
+                    class="pixel-svg"
+                    viewBox="0 0 120 120"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <rect
+                      width="120"
+                      height="120"
+                      fill="var(--pixel-bg)"
+                      rx="12"
+                    />
+                    <g fill="#9d72ff">
+                      <rect x="36" y="28" width="48" height="8" />
+                      <rect x="28" y="36" width="64" height="8" />
+                      <rect x="24" y="44" width="72" height="40" />
+                      <rect x="20" y="52" width="8" height="24" />
+                      <rect x="92" y="52" width="8" height="24" />
+                      <rect x="32" y="84" width="16" height="8" />
+                      <rect x="72" y="84" width="16" height="8" />
+                      <rect x="40" y="92" width="40" height="8" />
+                      <rect x="48" y="48" width="8" height="8" />
+                      <rect x="64" y="48" width="8" height="8" />
+                      <rect x="52" y="60" width="16" height="4" />
+                    </g>
+                    <g fill="#c4a3ff" opacity="0.9">
+                      <rect x="44" y="16" width="12" height="12" />
+                      <rect x="64" y="16" width="12" height="12" />
+                    </g>
+                  </svg>
+                </div>
+                <span class="pixel-deco pixel-deco--x">×</span>
+                <span class="pixel-deco pixel-deco--o">○</span>
+                <span class="pixel-deco pixel-deco--x2">×</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-block">
+        <div class="page reveal">
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-intro">
+            A snapshot of what I use day to day — more stacks coming as I ship
+            new work.
+          </p>
+          <div class="skill-cards">
+            <article class="skill-card">
+              <h3 class="skill-card__title">Developer</h3>
+              <ul class="skill-card__tags">
+                <li>Java</li>
+                <li>Python</li>
+                <li>SQL</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3 class="skill-card__title">Web</h3>
+              <ul class="skill-card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3 class="skill-card__title">Tools</h3>
+              <ul class="skill-card__tags">
+                <li>Figma</li>
+                <li>VS Code</li>
+                <li>Git</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-block section-alt">
+        <div class="page reveal">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-intro">
+            Highlights from my coursework and personal builds.
+          </p>
+          <div class="project-grid">
+            <a
+              class="project-card project-card--link"
+              href="https://github.com/anisha-gurung/Gym-System"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Gym management system — opens GitHub repository in a new tab"
+            >
+              <h3>Gym management system</h3>
+              <p>
+                Java desktop app for memberships, attendance, fees, and loyalty
+                — premium vs regular plans, add/remove members.
+              </p>
+              <span class="tag">Java · Swing GUI</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section-block">
+        <div class="page reveal">
+          <h2 class="section-title">Education</h2>
+          <p class="section-intro">
+            From high school science to a bachelor’s in computing — where I’m
+            studying now.
+          </p>
+          <div class="timeline">
+            <div class="timeline__track" aria-hidden="true"></div>
+            <ol class="timeline__list">
+              <li class="timeline__item">
+                <div class="timeline__node"><span>2024</span></div>
+                <article class="timeline__card">
+                  <h3>Bachelor’s in Computing</h3>
+                  <p class="timeline__meta">
+                    Informatic College Pokhara · 2024 – present
+                  </p>
+                  <p class="timeline__desc">
+                    Currently pursuing my undergraduate degree in computing.
+                  </p>
+                </article>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__node"><span>2022</span></div>
+                <article class="timeline__card">
+                  <h3>High school — Science</h3>
+                  <p class="timeline__meta">
+                    Global Collegiate School · 2021 – 2022 · Graduated 2022
+                  </p>
+                  <p class="timeline__desc">
+                    Science faculty — foundation before moving into computing at
+                    degree level.
+                  </p>
+                </article>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section-block section-alt">
+        <div class="page reveal">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-intro">
+            Project milestones and portfolio work — highlights from recent
+            years.
+          </p>
+          <div class="timeline">
+            <div class="timeline__track" aria-hidden="true"></div>
+            <ol class="timeline__list">
+              <li class="timeline__item">
+                <div class="timeline__node"><span>2025</span></div>
+                <article class="timeline__card">
+                  <h3>Portfolio site</h3>
+                  <p class="timeline__meta">Web · Personal project</p>
+                  <p class="timeline__desc">
+                    Built this portfolio with HTML, CSS, and JavaScript —
+                    layout, responsive design, and theme toggle.
+                  </p>
+                </article>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__node"><span>2024</span></div>
+                <article class="timeline__card">
+                  <h3>Gym Management System</h3>
+                  <p class="timeline__meta">Java · Course / personal project</p>
+                  <p class="timeline__desc">
+                    Desktop app for member records, attendance, fees, and loyalty
+                    points with GUI — published on GitHub.
+                  </p>
+                </article>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-block">
+        <div class="page reveal">
+          <h2 class="section-title">Connect</h2>
+          <p class="section-intro">
+            Open to opportunities and collaborations. Reach out on
+            <a href="https://www.linkedin.com/in/anisha-gurung-793008324/"
+              >LinkedIn</a
+            >
+            or
+            <a href="https://github.com/anisha-gurung">GitHub</a>, download my
+            <a href="../assets/resume.pdf" download="Anisha-Gurung-Resume.pdf"
+              >resume</a
+            >.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page">
+        <p class="footer-label">Where to find me</p>
+        <div class="social-row">
+          <a
+            class="social-link"
+            href="https://github.com/anisha-gurung"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="../img/git.png" alt="" width="36" height="36" />
+            <span>GitHub</span>
+          </a>
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/anisha-gurung-793008324/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="../img/linkedin.png" alt="" width="36" height="36" />
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <p class="copyright">&copy; <span id="year"></span> Anisha Gurung</p>
+      </div>
+    </footer>
+
+    <script src="../js/home.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
